@@ -1,7 +1,7 @@
-import express from 'express';
-import config from './config';
-import morgan from 'morgan';
-import productsRoutes from './routes/products.routes';
+import express from "express";
+import config from "./config";
+import morgan from "morgan";
+import productsRoutes from "./routes/products.routes";
 
 const app = express();
 
