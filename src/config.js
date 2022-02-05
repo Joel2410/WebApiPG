@@ -21,5 +21,5 @@ DB_PORT = 5432
 DB_USER = postgres
 DB_PASSWORD = 1234
 DB_NAME = store
-DB_LOGGING = false
+DB_LOGGING = true
 */

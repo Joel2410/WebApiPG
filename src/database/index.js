@@ -1,1 +1,2 @@
-export { productsQueries } from './queries/products.queries';
+export { productsQueries } from "./queries/products.queries";
+export * from "./connection";

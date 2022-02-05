@@ -17,6 +17,7 @@ app.use(express.json());
 // Routing
 app.use(productsRoutes);
 
+
 app.get('/', (req, res) => {
     res.send('WebApi with postgres');
 });

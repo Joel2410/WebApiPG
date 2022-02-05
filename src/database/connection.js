@@ -1,10 +1,10 @@
-import { Sequelize } from "sequelize";
+import { Sequelize, DataTypes, Model } from "sequelize";
 import config from "../config";
 
 const sequelize = new Sequelize(config.dbName, config.dbUser, config.dbPassword, {
   host: config.dbServer,
   dialect: config.dbDialect,
-  logging: config.dbLogging==='true' ? (...msg) => console.log(msg) : false
+  logging: config.dbLogging === 'true' ? (...msg) => console.log(msg) : false
 });
 
 const Open = async () => {
@@ -27,6 +27,9 @@ const Close = async () => {
 
 export {
   sequelize,
+  Sequelize,
+  DataTypes,
+  Model,
   Open,
   Close
 };
